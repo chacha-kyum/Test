@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing :border-box;
+        }
+        body{
+            margin : 0 auto;
+            width: 800px;
+        }
+        .header{
+            background-color: cornflowerblue;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu{
+            overflow: hidden;
+            background-color: #9999f2;
+        }
+        .menu a{
+            float: left;
+            display: block;
+            color : black;
+            text-align: center;
+            margin: 10px;
+            padding: 16px 16px;
+            text-decoration: none;
+        
+        }
+        .menu a:hover{
+            background-color: rgba(125,125,230,0.8);
+            color: black;
+        }
+
+        .column{
+            float: left;
+            width: 33.3333333%;
+            padding: 10px;
+
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear:both;
+        }
+        @media screen and (max-width:600px){
+            .column{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="header">BoBo's Homepage</h1>
+    </div>
+
+    <div class="menu">
+        <a href="https://www.daum.net">MENU1</a>
+        <a href="#">MENU2</a>
+        <a href="#">MENU3</a>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2>제목1</h2>
+            <p>관념론과 기독교는, 세계를 두 개로 구분짓는다. 이를테면 기독교는 이승 이외에도 하늘나라가 있다고 가르친다. 또한 플라톤은 세계를 현상계와 이데아계로 이분한다. 니체는 이러한 구분에 반대하며 '대지에서의 삶을 사랑할 것'을 주창하였다. 또한 현실에서의 삶을 비방하는 자들을 가리켜 퇴락한 인간[2]이라 부르며 비판하였다. 이렇듯, '영원한 세계'나 '절대적 가치'를 인정하지 않는다는 점에서 니체는 관념론적 형이상학에 반대한다. 니체는 기독교 신자들이 예수의 가르침과 달리, 안 믿으면 지옥 간다는 멸망적 교리만을 전했다며 기독교를 비판했다.</p>
+        </div>
+        <div class="column">
+            <h2>제목2</h2>
+            <p>니체는 1844년 10월 15일 예전의 프로이센 (독일)의 작센 지방의 작은 마을인 뢰켄(Röcken)에서 루터교 목사의 아들로 태어났다. 그의 이름은 프러시아의 왕인 프리드리히 빌헬름 4세에게서 빌려온 것으로, 빌헬름 4세는 니체가 태어나던 날에 나이가 49세를 넘어있었다(니체는 훗날 그의 이름에서 가운데에 있던 "빌헬름"을 빼 버렸다.[4]) 니체의 아버지인 카를 빌헬름 루트비히 니체(1813-1849)는 루터교회 목사이자 전직 교사이었고, 프란치스카 욀러(1826~1897)와 1843년에 결혼하였다.</p>
+        </div>
+        <div class="column">
+            <h2>제목3</h2>
+            <p>그의 여동생인 엘리자베스 니체는 1846년에 태어났고, 뒤를 이어 남동생인 루드비히 요셉이 1848년에 태어났다. 니체의 아버지는 뇌 질환으로 1849년에 세상을 떠났다. 그의 어린 남동생은 1850년에 죽었다. 그 후 가족은 나움부르크로 이사를 갔고, 그곳에서 니체의 할머니와 어머니 프란치스카, 아버지의 결혼하지 않은 두 자매, 두 하녀들과 함께 살며 어린시절을 보냈다. 니체의 할머니가 1856년에 세상을 하직하자, 가족은 그들의 집으로 이사했다.</p>
+        </div>
+    </div>
+
+</body>
+</html>
