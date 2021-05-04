@@ -7,23 +7,45 @@
     <title>Document</title>
 
     <style>
-        span.ex1{
-            -webkit-box-decoration-break; clone;
-            -o-box-decoration-break; clone;
-            box-decoration-break: clone;
+        body{
+            margin: 0 auto;
+            width: 600px;
         }
-        span.ex2{
+        div.box{
+            position: relative;
+            height: 300px;
+            border: rgb(10, 39, 206) 3px solid;
 
         }
+        div.absolute{
+            position: absolute;
+            width: 50%; bottom: 10px;
+            border: springgreen 3px solid;
+        }
+        div.fixed{
+            position: fixed;
+            width: 50%; top: 10px;
+            border: palevioletred 3px solid;
 
+        }
+        div.sticky{
+            position: sticky;
+            width: 50%; bottom: 50px;
+            border:rgb(204, 35, 182) 3px solid;
+            margin: 5px 0px;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Box decoration</h1>
-    <span class="ex1">CSS<br>is<br>so easy</span>
-    <h1>Box decoration</h1>
-    <span class="ex2">CSS<br>is<br>so easy</span>
+    <div class="box">Position-1
+        <div class="absolute">Position Absolute</div>
+    </div>
 
+    <div class="fixed">Position Fixed</div>
+
+    <div class="box">Position-2
+        <div class="sticky">Position Sticky</div>
+    </div>
 </body>
 </html>
