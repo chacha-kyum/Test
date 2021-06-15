@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=not, initial-scale=1.0, maximum-scale=1.0">
+    <title>Html menu</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+
+        }
+
+        body{
+            width:960px;
+            margin: 0 auto;
+
+        }
+        #menu{
+            width: 200px; float: left;
+            background-color: coral;
+        }
+
+        #content{
+            width: 760px; float : right;
+            background-color: chartreuse;
+        }
+
+        li{ list-style: none;}
+        @media screen and (max-width:767px){
+            body{
+                    width:auto;
+            }
+            #menu{width: auto; float: none;}
+            #content{width:auto; float: none;}
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ul>
+    </div>
+    
+    <div id="content">
+        <H1>  </H1>
+        <p>
+            트리플 블랙 3b 넥 윈드밴드 살까 말까 고민된다... 1+1 6만원 이번 여름 시원하게 보내고 싶다.트리플 블랙 3b 넥 윈드밴드 살까 말까 고민된다... 1+1 6만원 이번 여름 시원하게 보내고 싶다.
+        </p>
+    </div>
+</body>
+</html>
